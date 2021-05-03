@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/pizzaink"
+    android:text="Pizzáink:"
+    android:textSize="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="20dp"
+        android:fontFamily="cursive"
+    />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/margherita"
+        android:layout_below="@id/pizzaink"
+        android:id="@+id/margherita_img"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/margherita"
+        android:text="Margherita Pizza"
+        android:fontFamily="monospace"
+        android:layout_below="@id/margherita_img"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sonkas"
+        android:id="@+id/sonkas_img"
+        android:layout_below="@id/margherita"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sonkas"
+        android:text="Sonkás Pizza"
+        android:fontFamily="monospace"
+        android:layout_below="@id/sonkas_img"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hawaii"
+        android:layout_below="@id/sonkas"
+        android:id="@+id/hawaii_img"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hawaii"
+        android:text="Hawaii Pizza"
+        android:fontFamily="monospace"
+        android:layout_below="@id/hawaii_img"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gombas"
+        android:layout_below="@id/hawaii"
+        android:id="@+id/gombas_img"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gombas"
+        android:text="Gombás Pizza"
+        android:fontFamily="monospace"
+        android:layout_below="@id/gombas_img"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
