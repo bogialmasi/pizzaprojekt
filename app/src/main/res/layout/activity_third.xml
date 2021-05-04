@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,8 +16,7 @@
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="47dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="47dp" />
 
     <EditText
         android:id="@+id/irsz"
@@ -30,8 +29,7 @@
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="224dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="224dp" />
 
     <EditText
         android:id="@+id/telepules"
@@ -43,8 +41,7 @@
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="167dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="167dp" />
 
     <EditText
         android:id="@+id/hazszam"
@@ -57,8 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="282dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="282dp" />
 
     <Button
         android:id="@+id/megrendeles"
@@ -70,7 +66,6 @@
         app:backgroundTint="#FF9800"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="448dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="448dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
