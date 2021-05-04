@@ -15,8 +15,8 @@ public class FourthActivity extends AppCompatActivity {
         TextView szoveg = findViewById(R.id.szoveg);
         Bundle extras = getIntent().getExtras();
 
-        if (extras!=null){
-            szoveg.setText(("Sikeres megrendelés!\n") + (extras.getString("atadpizza")) + "\n" + (extras.getString("pizzameret")) + "\n" + (extras.getString("irsz")) + "\n" + (extras.getString("telepules")) + "\n" + extras.getString("szam"));
+        if (extras != null) {
+            szoveg.setText(extras.getString("atadpizza") + "\n" + (extras.getString("pizzameret")) + "\n" + (extras.getString("irsz")) + "\n" + (extras.getString("telepules")) + "\n" + extras.getString("szam"));
         }
 
     }

@@ -13,13 +13,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
-        android:background="#FFFFFF"
         android:fontFamily="cursive"
         android:text="Hová szállíthatjuk?"
-        android:textSize="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="47dp" />
+        android:textSize="40dp"/>
 
     <EditText
         android:id="@+id/irsz"
@@ -30,10 +26,7 @@
         android:layout_marginTop="72dp"
         android:hint="Irányítószám"
         android:inputType="number"
-        android:textColor="#FF9800"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="224dp" />
+        android:textColor="#FF9800"/>
 
     <EditText
         android:id="@+id/telepules"
@@ -43,10 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
         android:hint="Település"
-        android:textColor="#FF9800"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="167dp" />
+        android:textColor="#FF9800" />
 
     <EditText
         android:id="@+id/hazszam"
@@ -56,23 +46,35 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="59dp"
         android:hint="Utca/Házszám"
-        android:textColor="#FF9800"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="282dp" />
+        android:textColor="#FF9800" />
+
+    <TextView
+        android:id="@+id/pizzam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/hazszam"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pizzam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pizzam1"
+        android:fontFamily="monospace"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/megrendeles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/hazszam"
+        android:layout_below="@+id/pizzam2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="91dp"
+        android:layout_marginTop="28dp"
         android:text="Megrendelés"
-        app:backgroundTint="#FF9800"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="448dp" />
+        app:backgroundTint="#FF9800" />
 
 </RelativeLayout>
