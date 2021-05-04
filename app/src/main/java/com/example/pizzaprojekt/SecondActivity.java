@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
 
         TextView valasszon = findViewById(R.id.valasszon);
         Spinner mySpinner = (Spinner) findViewById(R.id.spinner);
+        String pizzameret = mySpinner.getSelectedItem().toString();
 
 
         mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -28,6 +29,7 @@ public class SecondActivity extends AppCompatActivity {
                     return;
                 }else{
                     Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                    intent.putExtra("pizzameret", pizzameret.toString());
                     startActivity(intent);
                 }
             }
